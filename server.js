@@ -22,6 +22,11 @@ app.get('/', (req, res) => {
     res.render('index.ejs')
 })
 
+// GET '/fruits/new
+app.get('/fruits/new', (req, res) => {
+    res.render('fruits/new.ejs')
+})
+
 app.listen(3000, () => {
     console.log('Listening on port 3000')
 })
