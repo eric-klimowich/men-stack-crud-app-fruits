@@ -6,7 +6,7 @@ const app = express()
 
 // GET '/'
 app.get('/', (req, res) => {
-    res.send('hello, friend')
+    res.render('index.ejs')
 })
 
 app.listen(3000, () => {
